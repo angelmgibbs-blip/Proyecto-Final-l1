@@ -11,6 +11,7 @@ public class Estudiante
 {
     // Propiedades requeridas (datos a registrar)
     public string Matrícula { get; set; } // Identificador único
+    public string Materia { get; set; }
     public string Nombre { get; set; }
     public int Calificación1 { get; set; }
     public int Calificación2 { get; set; }

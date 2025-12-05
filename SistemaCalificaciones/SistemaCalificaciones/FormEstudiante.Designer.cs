@@ -41,6 +41,8 @@
             label4 = new Label();
             btnGuardar = new Button();
             btnCancelar = new Button();
+            txtMateria = new TextBox();
+            label5 = new Label();
             SuspendLayout();
             // 
             // txtMatricula
@@ -147,11 +149,29 @@
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
             // 
+            // txtMateria
+            // 
+            txtMateria.Location = new Point(112, 149);
+            txtMateria.Name = "txtMateria";
+            txtMateria.Size = new Size(100, 23);
+            txtMateria.TabIndex = 13;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(49, 147);
+            label5.Name = "label5";
+            label5.Size = new Size(47, 15);
+            label5.TabIndex = 14;
+            label5.Text = "Materia";
+            // 
             // FormEstudiante
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label5);
+            Controls.Add(txtMateria);
             Controls.Add(btnCancelar);
             Controls.Add(btnGuardar);
             Controls.Add(label4);
@@ -186,5 +206,7 @@
         private Label label4;
         private Button btnGuardar;
         private Button btnCancelar;
+        private TextBox txtMateria;
+        private Label label5;
     }
 }

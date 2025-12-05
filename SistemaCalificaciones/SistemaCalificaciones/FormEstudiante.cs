@@ -46,9 +46,9 @@ namespace SistemaCalificaciones
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             // --- 1. Validaciones de Campos Obligatorios ---
-            if (string.IsNullOrWhiteSpace(txtMatricula.Text) || string.IsNullOrWhiteSpace(txtNombre.Text))
+            if (string.IsNullOrWhiteSpace(txtMatricula.Text) || string.IsNullOrWhiteSpace(txtNombre.Text) || string.IsNullOrWhiteSpace(txtMateria.Text))
             {
-                MessageBox.Show("Matrícula y Nombre son obligatorios.", "Error de Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Matrícula ,Materia y Nombre son obligatorios.", "Error de Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -82,6 +82,7 @@ namespace SistemaCalificaciones
             {
                 Matrícula = txtMatricula.Text,
                 Nombre = txtNombre.Text,
+                Materia = txtMateria.Text,
                 Calificación1 = c1,
                 Calificación2 = c2,
                 Calificación3 = c3,
@@ -117,7 +118,12 @@ namespace SistemaCalificaciones
                 {
                     MessageBox.Show("Error desconocido al actualizar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+            }
+        }
+
+        private void FormEstudiante_Load(object sender, EventArgs e)
+        {
+
+        }
     }
-}
-}
 }

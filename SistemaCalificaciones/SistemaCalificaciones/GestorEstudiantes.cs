@@ -49,6 +49,7 @@ namespace SistemaCalificaciones
 
             // Actualiza las propiedades (¡La Matrícula no debe cambiarse!)
             existente.Nombre = estudianteActualizado.Nombre;
+            existente.Materia = estudianteActualizado.Materia;
             existente.Calificación1 = estudianteActualizado.Calificación1;
             existente.Calificación2 = estudianteActualizado.Calificación2;
             existente.Calificación3 = estudianteActualizado.Calificación3;
